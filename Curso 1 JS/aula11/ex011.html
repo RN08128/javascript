@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é estrangeiro!?</title>
+    <style>
+        input#nome{
+            width: 180px;
+            margin-bottom: 10px;
+        }
+        input#pais{
+            width: 180px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de nacionalidade brasileira</h1>
+    <label for="nome">Nome: <input type="text" name="nome" id="nome" required minlength="2"></label><br>
+    <label for="pais">País de origem: <input type="text" name="pais" id="pais" required minlength="2"></label><br>
+    <input type="submit" value="Verificar" onclick="clicar()">
+
+    <div id="result">...</div>
+
+    <script>
+        function clicar() {
+            var nome = document.getElementById('nome')
+            var n = (nome.value)
+            var pais = document.getElementById('pais')
+            var p = (pais.value)
+            var res = document.getElementById('result')
+            
+            if (p == "Brasil") {
+                res.innerHTML = `Sr(a) ${n}, Você é Brasileiro`
+            } else {
+                res.innerHTML = `Sr(a) ${n}, Você é Estrangeiro`
+            }
+        }
+    </script>
+
+</body>
+</html>

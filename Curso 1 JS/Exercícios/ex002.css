@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightblue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+body > h1{
+    margin-top: 40px;
+    text-align: center;
+}
+
+div#geral{
+    margin: auto;
+    background-color: white;
+    width: 450px;
+    height: 380px;
+    color: black;
+    border-radius: 15px;
+}
+
+input{
+    margin: 8px;
+}
+
+div#quest{
+    margin-left: 4px;
+}
+
+div#resf{
+    text-align: center;
+    height: 18px;
+}
+
+div#resfi > img{
+    width: 250px;
+    margin-left: 20%;
+    margin-top: 15px;
+    border-radius: 50%;
+}
